@@ -126,13 +126,13 @@ class HotdogDecorator(Hotdog):
 
 
 if __name__ == '__main__':
-    hotdog = SimpleHotdog()
-    print(hotdog)
+    hotdog1 = SimpleHotdog()
+    print(hotdog1)
 
     hotdog2 = SpecialHotdog()
     print(hotdog2)
 
-    hotdog3 = HotdogDecorator(hotdog, MashedPotatoes())
+    hotdog3 = HotdogDecorator(hotdog1, MashedPotatoes())
     print(hotdog3)
 
     hotdog4 = HotdogDecorator(hotdog3, Cheese())
